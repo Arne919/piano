@@ -24,9 +24,18 @@ const sounds = {
 };
 
 // 마우스로 클릭하면 소리 재생
+// document.querySelectorAll(".key").forEach(key => {
+//   key.addEventListener("click", () => playSound(key.dataset.note));
+// });
+// 마우스 클릭 & 모바일 터치 이벤트 모두 지원
 document.querySelectorAll(".key").forEach(key => {
   key.addEventListener("click", () => playSound(key.dataset.note));
+  key.addEventListener("touchstart", (event) => {
+      event.preventDefault(); // 터치할 때 클릭 이벤트와 충돌 방지
+      playSound(key.dataset.note);
+  });
 });
+
 
 // 키보드 입력 이벤트 처리
 document.addEventListener("keydown", (event) => {
