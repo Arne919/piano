@@ -3,21 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Piano</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>심심해서 만든 피아노</title>
+    <link rel="stylesheet" href="style.css">
     <script defer src="piano.js"></script>
+    <!-- 파비콘 설정 (png) -->
+    <link rel="icon" type="image/png" href="piano.png">
 </head>
 <body>
-    <h1>🎹 Virtual Piano</h1>
+    <h1>🎹 간단갈비 피아노</h1>
     <div class="piano">
-        <button class="key white" data-note="C">도</button>
-        <button class="key white" data-note="D">레</button>
-        <button class="key white" data-note="E">미</button>
-        <button class="key white" data-note="F">파</button>
-        <button class="key white" data-note="G">솔</button>
-        <button class="key white" data-note="A">라</button>
-        <button class="key white" data-note="B">시</button>
-        <button class="key white" data-note="C_high">도</button>
+        <!-- 흰 건반 -->
+        <div class="key-container">
+            <div class="key white" data-note="C4">도</div>
+            <div class="key black" data-note="C#4">도#</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="D4">레</div>
+            <div class="key black" data-note="D#4">레#</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="E4">미</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="F4">파</div>
+            <div class="key black" data-note="F#4">파#</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="G4">솔</div>
+            <div class="key black" data-note="G#4">솔#</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="A4">라</div>
+            <div class="key black" data-note="A#4">라#</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="B4">시</div>
+        </div>
+        <div class="key-container">
+            <div class="key white" data-note="C5">도</div>
+        </div>
     </div>
 </body>
 </html>
